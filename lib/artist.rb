@@ -29,4 +29,7 @@ class Artist
     
   end
 
+  def self.find(name)
+    self.all.find {|artist| name == artist.name}
+
 end
