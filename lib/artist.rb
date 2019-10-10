@@ -38,4 +38,9 @@ class Artist
     new_artist.save
     new_artist
   end
+
+  def print_songs
+    puts self.all.songs
+  end
+
 end
